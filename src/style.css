@@ -1,0 +1,233 @@
+/* style.css */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+#product-options-container {
+    background-color: white;
+    border-radius: 12px;
+    padding: 24px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.headerline{
+    width: 30%;
+    height: 1.5px;
+    background-color:rgb(164, 158, 158);
+    margin: 20px 0;
+ 
+}
+
+h1{
+    color: #f76c83;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.option-card {
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.option-card.selected {
+    border-color: #f76c83;
+    box-shadow: 0 0 0 1px #f76c83;
+}
+
+.option-card input[type="radio"] {
+    margin-right: 16px;
+    margin-top: 5px;
+    accent-color: #f76c83;
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+}
+
+.option-content {
+    flex-grow: 1;
+}
+
+.option-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.option-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #212529;
+}
+
+.discount-tag {
+    background-color: #ffe3e8;
+    color: #d9376e;
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.price-details {
+    text-align: right;
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+.current-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #212529;
+    margin: 0;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #adb5bd;
+    font-size: 14px;
+    margin: 0;
+}
+
+.standard-price-text {
+    font-size: 14px;
+    color: #6c757d;
+    margin: 4px 0 0 0;
+}
+
+.most-popular-banner {
+    position: absolute;
+    top: -12px;
+    right: 15px;
+    background-color: #f76c83;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.customization-section {
+    margin-top: 16px;
+    display: none;
+}
+
+.option-card.selected .customization-section {
+    display: block;
+}
+
+.customization-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+    align-items: center;
+}
+
+.customization-row:last-child {
+    margin-bottom: 0;
+}
+
+.customization-row span {
+    font-size: 14px;
+    color: #495057;
+    min-width: 25px;
+}
+
+.customization-row select {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    font-size: 14px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    padding-right: 2.5rem;
+}
+
+/* .color-select-wrapper {
+    position: relative;
+    width: 50%;
+}
+
+.color-select-wrapper {
+    position: relative;
+    width: 50%;
+} */
+
+
+
+.footer-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 8px;
+}
+
+.delivery-text {
+    font-weight: 600;
+    color: #f76c83;
+}
+
+.total-price-display {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.total-price-display span {
+    color: #495057;
+}
+
+.add-to-cart-btn {
+    width: 100%;
+    background-color: #f76c83;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #f54b68;
+}
